@@ -16,7 +16,7 @@ docker run -d -it --network cdntip_network -v /data/mysql:/var/lib/mysql --name 
 
 启动 cloudpanel
 
-docker run -d -it --network cdntip_network -p 8111:80 --name panel xmg66/openpanel
+docker run -d -it --network cdntip_network -p 8222:80 --name panel xmg66/openpanel
 (8111端口可改为任意，此处为实际对外端口)
 
 进入容器
@@ -24,9 +24,9 @@ docker run -d -it --network cdntip_network -p 8111:80 --name panel xmg66/openpan
 docker exec -it panel /bin/bash
 
 创建管理员
-python manage.py createsuperuser --username ree34gsfewr --email foeg3fsfe4ifa@wf38sf.com  （创建用户）
+python manage.py createsuperuser --username pangzi --email sdda@wf38sf.com  （创建用户）
 
-fe39SI33##3Ss3zb83
+
  
 添加aws镜像
 
