@@ -12,8 +12,7 @@ docker network create cdntip_network 启动mysql容器
 
 mkdir /data
 
-docker run -d -it --network cdntip_network -v /data/mysql:/var/lib/mysql --name panel_mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=Xiaolaoge123456 mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-(更换mysqlroot密码后，机器内部也需要修改database.conf文件的密码)
+docker run -d -it --network cdntip_network -v /data/mysql:/var/lib/mysql --name panel_mysql -e MYSQL_ROOT_PASSWORD=Xiaolaoge123456 -e MYSQL_DATABASE=panel mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci (更换mysqlroot密码后，机器内部也需要修改database.conf文件的密码)
 
 启动 cloudpanel
 
