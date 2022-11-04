@@ -16,7 +16,7 @@ docker run -d -it --network cdntip_network -v /data/mysql:/var/lib/mysql --name 
 
 启动 cloudpanel
 
-docker run -d -it --network cdntip_network -p 8222:80 --name panel xmg66/openpanel
+docker run -d -it --network cdntip_network -p 8222:80 --name panel xmg66/openpanel2
 (8111端口可改为任意，此处为实际对外端口)
 
 进入容器
