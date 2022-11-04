@@ -34,5 +34,5 @@ python manage.py aws_update_images
 
 更新程序
 
-docker stop panel ＃停止当前容器
+docker restart  panel ＃停止当前容器
 docker rm panel＃删除当前容器 
